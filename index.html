@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>电子简历响应式</title>
+    <link rel="stylesheet" href="bootstrap-3.3.7/dist/css/bootstrap.css">
+
+    <!-- <link rel="stylesheet" href="css/responsive-nav.css"> -->
+
+    <link rel="stylesheet" href="css/style-01.css">
+
+    <link rel="stylesheet" href="css/icon-font.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+
+        <!-- 简历首页 -->
+        <!-- bootstrap响应式导航插件 -->
+        <nav class="navbar navbar-fixed-top my-nav-custom">
+            <div class="container">
+                <!-- .navbar-header——主要指定div元素为导航条组件包裹品牌图标及折叠切换按钮； -->
+                <div class="navbar-header">
+                    <!-- 定义折叠切换按钮-小屏幕显示 -->
+                    <!-- .navbar-toggle——设置button元素为导航条组件的切换钮； -->
+                    <!-- data-toggle="collapse"-折叠属性 -->
+                    <!-- data-target="#nav-collapse"-折叠目录：#my-navbar-collapse表示作用于id="my-navbar-collapse"元素 -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse"
+                        data-target="#my-navbar-collapse">
+                        <span class="glyphicon glyphicon-align-left"></span>
+                    </button>
+
+                </div>
+
+                <!-- .collapsed——设置button元素为在视口小于768px时才显示；
+                 collapse的作用是为了当浏览器的窗口宽度小于768px的时候，将设置为collapse样式的div元素内的所有其它元素都折叠起来，以一个列表的形式显示 -->
+                <!-- .navbar-collapse——设置div元素为导航条组件各列表项的父元素； -->
+                <!-- .navbar-right——设置导航条内元素向右对齐； -->
+                <div class="collapse navbar-collapse navbar-right" id="my-navbar-collapse">
+                    <!-- .nav——设置导航条组件样式； -->
+                    <!-- .navbar-nav——设置导航条组件样式水平排列； -->
+                    <ul class="nav navbar-nav">
+                        <li><a href="#jbzl">基本资料</a></li>
+                        <li><a href="#xmjy">项目经验</a></li>
+                        <li><a href="#zyjn">专业技能</a></li>
+                        <li><a href="#xmjy">人生经历</a></li>
+                        <li><a href="#zwpj">自我评价</a></li>
+                        <li><a href="#lxfs">联系方式</a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container -->
+        </nav>
+
+        <div class="container center-nav">
+            <div class="row">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <h2>个人电子简历——<span>苏儿</span></h2>
+                    <h4>享受科技，热爱生活</h4>
+                    <span class="icon1">
+                        <a href="#jbzl"><i class="fa fa-angle-double-down"></i></a>
+                    </span>
+                    >
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <section>
+        <!-- 个人资料 -->
+        <div class="myZiliao" id="jbzl">
+            <div class="container">
+                <div>
+                    <div>
+                        <h2>我的&nbsp;资料</h2>
+                        <hr>
+                    </div>
+                    <div class="myXinxi row">
+                        <div class="col-md-3 col-sm-6">
+                            <span class="icon"><i class="icon-zl icon-laptop"></i></span>
+                            <h3>个人信息</h3>
+                            <p>姓名:苏洋铭&nbsp;性别：男</p>
+                            <p>年龄:22&nbsp;籍贯：四川</p>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <span class="icon"><i class="icon-zl icon-user-tie"></i></span>
+                            <h3>个人信息</h3>
+                            <p>姓名:苏洋铭&nbsp;性别：男</p>
+                            <p>年龄:22&nbsp;籍贯：四川</p>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <span class="icon"><i class="icon-zl icon-radio-checked"></i></span>
+                            <h3>个人信息</h3>
+                            <p>姓名:苏洋铭&nbsp;性别：男</p>
+                            <p>年龄:22&nbsp;籍贯：四川</p>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <span class="icon"><i class="icon-zl icon-embed2"></i></span>
+                            <h3>个人信息</h3>
+                            <p>姓名:苏洋铭&nbsp;性别：男</p>
+                            <p>年龄:22&nbsp;籍贯：四川</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 项目经验 -->
+        <div class="myXMJY" id="xmjy">
+            <div class="container">
+                <div class="myXMJY_1">
+                    <h3>项目 经验</h3>
+                    <p>主要涉及电商，金融，教育领域，包括PC端，手机端，微信端，移动APP端等等</p>
+                    <ul id="button-group" class="btnStyle">
+                        <li><button data-filter=".web" class="active-btn">所有</button></li>|
+                        <li><button data-filter=".pc">PC端</button></li>|
+                        <li><button data-filter=".mobile">移动端</button></li>|
+                        <li><button data-filter=".resp">响应式</button></li>
+                    </ul>
+                </div>
+
+                <!-- grid : iso动画过滤插件-->
+                <div class="row">
+                    <div class="grid sec">
+                        <div class="grid-item col-md-3 col-sm-6  sec-img web pc">
+                            <div class="img-hover">
+                                <img src="img/portfolio/01.jpg" alt="">
+                                <div>
+                                    <h3>娱乐门户</h3>
+                                    <p>技术：HTML+CSS+jQuery</p>
+                                    <i class="icon-search"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="grid-item col-md-3 col-sm-6 sec-img web pc">
+                            <div class="img-hover">
+                                <img src="img/portfolio/02.jpg" alt="">
+                                <div>
+                                    <h3>娱乐门户</h3>
+                                    <p>技术：HTML+CSS+jQuery</p>
+                                    <i class="icon-search"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="grid-item col-md-3 col-sm-6 sec-img web pc">
+                            <div class="img-hover">
+                                <img src="img/portfolio/03.jpg" alt="">
+                                <div>
+                                    <h3>娱乐门户</h3>
+                                    <p>技术：HTML+CSS+jQuery</p>
+                                    <i class="icon-search"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-item col-md-3 col-sm-6 sec-img web mobile">
+                            <div class="img-hover">
+                                <img src="img/portfolio/04.jpg" alt="">
+                                <div>
+                                    <h3>娱乐门户</h3>
+                                    <p>技术：HTML+CSS+jQuery</p>
+                                    <i class="icon-search"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="grid-item col-md-3 col-sm-6 sec-img web pc">
+                            <div class="img-hover">
+                                <img src="img/portfolio/05.jpg" alt="">
+                                <div>
+                                    <h3>娱乐门户</h3>
+                                    <p>技术：HTML+CSS+jQuery</p>
+                                    <i class="icon-search"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="grid-item col-md-3 col-sm-6 sec-img web mobile">
+                            <div class="img-hover">
+                                <img src="img/portfolio/06.jpg" alt="">
+                                <div>
+                                    <h3>娱乐门户</h3>
+                                    <p>技术：HTML+CSS+jQuery</p>
+                                    <i class="icon-search"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="grid-item col-md-3 col-sm-6 sec-img web pc">
+                            <div class="img-hover">
+                                <img src="img/portfolio/07.jpg" alt="">
+                                <div>
+                                    <h3>娱乐门户</h3>
+                                    <p>技术：HTML+CSS+jQuery</p>
+                                    <i class="icon-search"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="grid-item col-md-3 col-sm-6 sec-img web mobile">
+                            <div class="img-hover">
+                                <img src="img/portfolio/08.jpg" alt="">
+                                <div>
+                                    <h3>娱乐门户</h3>
+                                    <p>技术：HTML+CSS+jQuery</p>
+                                    <i class="icon-search"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- 专业技能 -->
+        <div class="myZYJN" id="zyjn">
+            <div class="container">
+                <div class="zyjn-up">
+                    <h3>专业 技能</h3>
+                    <hr>
+                </div>
+                <div class="row zyjn-down">
+                    <div class="col-md-6 zyjn-img">
+                        <img src="img/about.png" alt="">
+                    </div>
+                    <div class="col-md-6 zyjn-jn">
+                        <ul>
+                            <h3><i class="icon-pencil"></i>掌握</h3>
+                            <li>掌握前端开发基础技术（HTML+CSS）.</li>
+                            <li>掌握web页面 & 移动端架构布局和响应式、熟悉移动端屏幕适配方案.</li>
+                            <li>掌握Bootstrap/Element-UI/Vant-Weapp/Ant- design等UI组件库、ECharts图表库.</li>
+                        </ul>
+                        <ul>
+                            <h3><i class="icon-users"></i>熟悉</h3>
+							<li>熟悉JavaScript编程以及ES6新语法.</li>
+                            <li>熟悉主流开发框架（Vue、React），独立负责模块开发</li>
+							<li>熟悉微信小程序开发流程、有微信小程序开发经验</li>
+							<li>熟悉Webpack打包工具</li>
+                        </ul>
+                        <ul>
+                            <h3><i class="icon-wrench"></i>了解</h3>
+                            <li>了解使用less/sass预处理工具</li>
+							<li>了解TypeScript 语法特性</li>
+							<li>了解SVN、Git</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- 数字动画 -->
+        <div class="numberAnimation">
+            <div class="container">
+                <div class="row numberAnimation-box">
+                    <div class="col-md-3 col-sm-6 col-xs-12 ">
+                        <i class="icon-smile"></i>
+                        <p class="slowNumber">30</p>
+                        <span>AGE YEARS</span>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <i class="icon-embed2"></i>
+                        <p class="slowNumber">100000</p>
+                        <span>CODE AMOUNT</span>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <i class="icon-checkbox-checked"></i>
+                        <p class="slowNumber">87600</p>
+                        <span>WORK HOUR</span>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <i class="icon-trophy"></i>
+                        <p class="slowNumber">30</p>
+                        <span>PROJECTS AMOUNT</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- 人生经历 -->
+        <div class="myRSJL" id="rsjl">
+            <div class="container">
+                <div class="rsjl-up">
+                    <h3>人生 经历</h3>
+                    <hr>
+                    <p>热爱互联网，热爱技术，专注于前端技术开发和用户体验</p>
+                </div>
+                <div class="rsjl-down row">
+                    <div class="col-md-3 col-sm-6">
+                        <img src="img/team/01.jpg" alt="">
+                        <h3>成都工业职业技术学院</h3>
+                        <p>信息工程</p>
+                        <p>主要学习编程语言，前端技术，网站制作和开发</p>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <img src="img/team/02.jpg" alt="">
+                        <h3>成都益讯科技有限公司</h3>
+                        <p>前端工程师</p>
+                        <p>主要负责前端静态页面开发</p>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <img src="img/team/03.jpg" alt="">
+                        <h3>时空科技</h3>
+                        <p>后端工程师</p>
+                        <p>主要从事金币制造</p>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <img src="img/team/04.jpg" alt="">
+                        <h3>好未来</h3>
+                        <p>后端工程师</p>
+                        <p>主要从事儿童教育软件研发相关工作</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- bootstrap 重写 自我评价 轮播效果 -->
+        <div class="evaluation" id="zwpj">
+            <div class="container">
+                <div class="row">
+                    <div class="evaluation-up">
+                        <h3>自我 评价</h3>
+                        <hr>
+                    </div>
+                    <div id="evaluation-wrap" class="carousel slide evaluation-down" data-ride="carousel">
+                        <!-- 轮播内容 -->
+                        <div class="carousel-inner">
+
+                            <div class="item active">
+                                <p>热爱学习,良好的团队合作精神，能迅速融入新的团队。</p>
+                                <p>易和人相处，拥有良好的亲和力。</p>
+                            </div>
+                            <div class="item">
+                                <p>热爱学习,良好的团队合作精神，能迅速融入新的团队。</p>
+                                <p>易和人相处，拥有良好的亲和力。2</p>
+                            </div>
+                            <div class="item">
+                                <div>
+                                    <p>热爱学习,良好的团队合作精神，能迅速融入新的团队。</p>
+                                    <p>易和人相处，拥有良好的亲和力。3</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- 指示器小点 -->
+                        <ol class="carousel-indicators indicators-up">
+                            <li data-target="#evaluation-wrap" data-slide-to="0" class="active"></li>
+                            <li data-target="#evaluation-wrap" data-slide-to="1"></li>
+                            <li data-target="#evaluation-wrap" data-slide-to="2"></li>
+                        </ol>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- 联系方式 -->
+        <div class="myLXFS" id="lxfs">
+            <div class="container">
+                <div class="lxfs-up">
+                    <h3>联系 方式</h3>
+                    <hr>
+                </div>
+                <div class="row lxfs-centre">
+                    <div class="col-md-4">
+                        <i class="icon-location2"></i>
+                        <p>四川省成都市</p>
+                    </div>
+                    <div class="col-md-4">
+                        <i class="icon-envelop"></i>
+                        <p>15182191003@163.com</p>
+                    </div>
+                    <div class="col-md-4">
+                        <i class="icon-phone"></i>
+                        <p>15182191003</p>
+                    </div>
+                </div>
+                <div>
+                    <h3>给我发邮件</h3>
+                </div>
+                <div class="lxfs-down">
+                    <form action="">
+                        <div class="input-up row">
+                            <div class="col-md-4 col-md-offset-2 col-sm-6 col-xs-12">
+                                <input type="text" id="username" name="username" placeholder="姓名">
+                            </div>
+
+                            <div class="col-md-4 col-sm-6 col-xs-12">
+                                <input type="email" id="email" name="email" placeholder="邮箱">
+                            </div>
+                        </div>
+
+                        <div class="input-down row">
+                            <div class="col-md-8 col-md-offset-2">
+                                <textarea name="" placeholder="内容" id="textarea"></textarea>
+                            </div>
+                        </div>
+
+                        <div>
+                            <button>确认发送</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="footer-my .navbar-form">
+            <div class=" container">
+                <div class="row">
+                    <div class="col-md-6 col-xs-12 col-sm-6">
+                        <p>Copyright &copy; 2020 作者：苏2. 前端工程师</p>
+                    </div>
+                    <div class="col-md-6 col-xs-12 col-sm-6">
+                        <i class="icon-sina-weibo"></i>
+                        <i class="icon-qq1"></i>
+                        <i class="icon-tux"></i>
+                        <i class="icon-renren"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <!-- jquery & js代码 -->
+    <script src="js/jquery-3.5.1.js"></script>
+    <!-- bootstrap响应式js文件 -->
+    <script src="bootstrap-3.3.7/dist/js/bootstrap.js"></script>
+    <!-- iso动画过滤js文件 -->
+    <script src="js/isotope.pkgd.js"></script>
+
+    <!-- 数字动画js文件 -->
+    <script src="js/slowNumber.js"></script>
+
+    <script>
+        $(function () {
+            // 给导航栏设置滚动事件
+            $(document).on("scroll", function () {
+                if ($(document).scrollTop() > 50) { //判断滚动高度是否大于导航栏高度
+                    $(".my-nav-custom").addClass("my-scroll-top"); //符合判断条件，给导航栏nav动态添加一个class类
+                } else {
+                    $(".my-nav-custom").removeClass("my-scroll-top"); //不符合判断条件，删除导航栏class类
+                }
+            })
+
+            // bootstrap框架 自动轮播
+            $(function () {
+                $('#evaluation-wrap').carousel({
+                    interval: 2000
+                })
+            })
+
+
+            // iso框架 过滤
+            $("#button-group button").click(function () {
+                //设置按钮选中状态
+                $("#button-group .active-btn").removeClass("active-btn"); //移除选中状态
+                $(this).addClass("active-btn");
+
+                // 获取过滤值
+                let filterValue = $(this).attr("data-filter");//获取data-filter这个自定义属性的值
+
+                //过滤值应用
+                $(".grid").isotope({
+                    filter: filterValue //过滤的选中的值
+                })
+            })
+
+
+            //描点跳转 顺滑滚动
+            $("nav a").on("click", function () { // 1.找到nav下面的a标签，并给a标签设置点击事件
+
+                // 2.通过hash值 赋值给变量
+                let target = $(this.hash);  //this.hash会返回一个id值，
+
+                // 3.获取元素距离顶部的距离并赋值给变量
+                let aOffsetTo = target.offset().top;
+          
+                // 4.给body设置滚动动画
+                $("html,body").animate({
+                    scrollTop: aOffsetTo
+                }, 900)
+            })
+
+
+            // 表单验证非空判定
+
+            // 姓名框
+            $("#username").blur(function () { //通过id属性找到姓名框，当元素失去焦点时发生 blur 事件
+                let username = $(this).val(); //获取到id为"username"这个input元素节点的 value值
+                $("#userspan").remove(); //执行if判断之前先删除 span的内容
+                if (username == "") { //判断 input框内容为不为空
+                    $("#username").after("<span id='userspan' style='color:blue;'>姓名不能为空</span>");
+                }
+            })
+
+            //邮箱框
+            $("#email").blur(function () { //通过id属性找到邮箱框，当元素失去焦点时发生 blur 事件
+                let useremail = $(this).val(); //获取到id为"email"这个input元素节点的 value值
+                $("#userspan").remove(); //执行if判断之前先删除 span的内容
+                if (useremail == "") { //判断 input框内容为不为空
+                    $("#email").after("<span id='userspan' style='color:blue;'>邮箱不能为空</span>");
+                }
+            })
+
+            //内容框
+            $("#textarea").blur(function () { //通过id属性找到邮箱框，当元素失去焦点时发生 blur 事件
+                let textarea = $(this).val(); //获取到id为"email"这个input元素节点的 value值
+                $("#userspan").remove(); //执行if判断之前先删除 span的内容
+                if (textarea == "") { //判断 input框内容为不为空
+                    $("#textarea").after("<span id='userspan' style='color:blue;'>内容不能为空</span>");
+                }
+            })
+        });
+    </script>
+</body>
+
+</html>
